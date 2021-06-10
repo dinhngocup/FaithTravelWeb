@@ -1,0 +1,33 @@
+@import "../../../asset/style/color.scss";
+.search-bar {
+    width: 470px;
+    height: 40px;
+    position: relative;
+    i {
+        box-sizing: border-box;
+        position: absolute;
+        top: 4px;
+        right: 8px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: $btn-search-color;
+        color: white;
+    }
+    input {
+        font-size: small;
+        padding-right: 50px;
+        width: 470px;
+        padding-left: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        outline: none;
+        line-height: 40px;
+        border-radius: 60px;
+        border: 1px solid #dddddd;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 4px 12px rgba(0, 0, 0, 0.05);
+        &::placeholder {
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.trips {
+    .title {
+        padding: 40px 0px;
+    }
+    .trips-nav {
+        
+        border-bottom: 1px solid rgb(221, 221, 221);
+        a {
+            &.btn-active {
+                button {
+                    border-bottom: 2px solid rgb(34, 34, 34);
+                    color: rgb(34, 34, 34);
+                }
+            }
+            button {
+                outline: none;
+                font-weight: 600;
+                padding: 10px 20px;
+                background-color: white;
+                border: none;
+                color: rgb(113, 113, 113);
+                &:hover {
+                    background: rgb(247, 247, 247);
+                    color: rgb(34, 34, 34);
+                }
+            }
+        }
+    }
+}

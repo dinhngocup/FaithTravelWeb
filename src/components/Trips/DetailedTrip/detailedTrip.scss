@@ -1,0 +1,56 @@
+@import "../../../asset/style/color.scss";
+.detailed-trip {
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .timeline {
+        line-height: 30px;
+        .homestay-name {
+            .name {
+                font-size: x-large;
+                font-weight: 600;
+            }
+            justify-content: space-between;
+            align-items: center;
+        }
+        .time {
+            span {
+                color: $main-color;
+                float: right;
+            }
+            width: 40%;
+        }
+    }
+    .home-info {
+        .decoration {
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: "";
+                top: 20%;
+                right: 50%;
+                height: 70%;
+                width: 2px;
+                background-color: #d8d8d8;
+            }
+        }
+        .detail {
+            line-height: 20px;
+            .payment {
+                display: flex;
+                width: 60%;
+                justify-content: space-between;
+                span {
+                    color: $main-color;
+                }
+            }
+            .detail-title {
+                margin-bottom: 30px;
+                font-size: large;
+                font-weight: 700;
+            }
+        }
+    }
+}
