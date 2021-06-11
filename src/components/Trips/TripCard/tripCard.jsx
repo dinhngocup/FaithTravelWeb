@@ -13,7 +13,7 @@ function TripCard(props) {
       </Link>
     ) : (
       <>
-        <Link to="/trips/upcomming/1">
+        <Link to="/homestay">
           <button>Review</button>
         </Link>
 

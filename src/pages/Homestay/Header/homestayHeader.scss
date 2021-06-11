@@ -1,0 +1,25 @@
+
+.homestay-header {
+    .name {
+        padding-bottom: 5px;
+    }
+    .sub-title {
+        align-items: center;
+        color: rgb(113, 113, 113);
+        font-size: small;
+    }
+    .heart-icon {
+        @media (max-width: 991px) {
+            margin-top: 10px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+        @media (min-width: 991px) {
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        
+    }
+}

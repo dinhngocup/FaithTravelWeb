@@ -1,0 +1,22 @@
+.reviewer {
+    .reviewer-content {
+        justify-content: space-between;
+        .reviewer {
+            .reviewer-info {
+                .date {
+                    font-size: small;
+                    color: rgb(113, 113, 113);
+                }
+            }
+            img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .review-content {
+        margin: 20px 0;
+        text-align: justify;
+    }
+}

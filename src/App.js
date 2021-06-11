@@ -4,6 +4,7 @@ import "./App.css";
 import "./app.scss";
 import Header from "./pages/Header/main";
 import Trips from "./pages/Trips/main";
+import Homestay from "./pages/Homestay/main";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
             <Switch>
               <Route path="/trips">
                 <Trips />
+              </Route>
+              <Route path="/homestay">
+                <Homestay />
               </Route>
             </Switch>
           </div>

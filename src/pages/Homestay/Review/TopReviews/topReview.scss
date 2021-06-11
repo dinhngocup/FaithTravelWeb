@@ -1,0 +1,25 @@
+.review-title {
+    padding: 20px 0;
+}
+.review-row {
+    .col-review {
+        border-bottom: 1px solid #eee;
+        //margin-bottom: 30px;
+    }
+}
+.review-area {
+    .view-all {
+        text-align: center;
+        img {
+            height: 40px;
+            padding-left: 10px;
+        }
+        a {
+            color: #222;
+            font-weight: 600;
+        }
+    }
+    .arrow {
+        height: 40px;
+    }
+}

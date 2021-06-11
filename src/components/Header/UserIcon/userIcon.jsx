@@ -8,6 +8,7 @@ function UserIcon() {
       <div className="dropdown">
         <NavLink to={`/profile`}>Saved</NavLink>
         <NavLink to={`/trips/upcomming`}>Trips</NavLink>
+        <NavLink to={`/homestay`}>Homestay</NavLink>
         <div>Logout</div>
       </div>
     );
