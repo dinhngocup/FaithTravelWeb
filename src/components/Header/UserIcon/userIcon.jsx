@@ -6,7 +6,7 @@ function UserIcon() {
   const renderUserModal = () => {
     return (
       <div className="dropdown">
-        <NavLink to={`/profile`}>Saved</NavLink>
+        <NavLink to={`/saved`}>Saved</NavLink>
         <NavLink to={`/trips/upcomming`}>Trips</NavLink>
         <NavLink to={`/homestay`}>Homestay</NavLink>
         <div>Logout</div>

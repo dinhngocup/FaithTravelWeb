@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "reactstrap";
 import ReviewItem from "../ReviewItem/reviewItem";
-import Pagination from "./Pagination/pagination";
+import Pagination from "../../../../components/common/Pagination/pagination";
 import "../reviewHeader.scss";
 import { Link } from "react-router-dom";
 
@@ -33,7 +33,7 @@ function AllReviews(props) {
             <ReviewItem />
           </Col>
         </Row>
-        <Pagination />
+        <Pagination/>
       </div>
     </div>
   );

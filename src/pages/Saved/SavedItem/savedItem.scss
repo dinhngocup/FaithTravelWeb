@@ -1,0 +1,65 @@
+.saved-item {
+    //width: 70%;
+    a {
+        color: black !important;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &:hover {
+        .row {
+            opacity: 0.9;
+        }
+    }
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    border-radius: 12px;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+    .saved-homestay-info {
+        padding: 30px;
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: small !important;
+        .rating {
+            align-items: center;
+            .average-rating {
+                margin-left: 0 !important;
+            }
+            .review-homestay {
+                color: #717171;
+            }
+        }
+    }
+    .homestay-title {
+        justify-content: space-between;
+        align-items: flex-start;
+        .title-content {
+            .location {
+                color: #717171;
+                font-size: small;
+            }
+            .rule {
+                line-height: 50px;
+                color: #717171;
+            }
+            .name {
+                font-size: x-large;
+                position: relative;
+                line-height: 50px;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    height: 1px;
+                    width: 40px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #dddddd;
+                }
+            }
+        }
+    }
+}

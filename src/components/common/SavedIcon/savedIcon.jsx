@@ -3,6 +3,7 @@ import './savedIcon.scss'
 
 function SavedIcon(props) {
     const changeSavedStatus = (e) => {
+        e.preventDefault();
         let icon = e.target;
         if (icon.classList.contains("active")) icon.classList.remove("active");
         else icon.classList += " active";
