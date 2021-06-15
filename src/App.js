@@ -5,7 +5,7 @@ import "./app.scss";
 import Header from "./pages/Header/main";
 import Trips from "./pages/Trips/main";
 import Homestay from "./pages/Homestay/main";
-import Saved from './pages/Saved/main';
+import Saved from "./pages/Saved/main";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
               <Route path="/trips">
                 <Trips />
               </Route>
-              <Route path="/homestay">
+              <Route exact path={["/homestay", "/"]}>
                 <Homestay />
               </Route>
               <Route path="/saved">

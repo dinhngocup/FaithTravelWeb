@@ -2,13 +2,13 @@ import React from "react";
 import "./_pagination.scss";
 
 function Pagination(props) {
-  const totalReviews = 10
+  const { changeCurrentPage, quantityPerPage, totalReviews } = props;
   const renderPagination = () => {
-    let pageNumbers = Math.ceil(totalReviews / 4);
+    let pageNumbers = Math.ceil(totalReviews / quantityPerPage);
     let result = [];
     for (let i = 1; i <= pageNumbers; i++) {
       result.push(
-        <li className="page-item" key={i}>
+        <li className="page-item" key={i} onClick={() => changeCurrentPage(i)}>
           <button className="page-link">{i}</button>
         </li>
       );

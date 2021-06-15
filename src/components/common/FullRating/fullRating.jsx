@@ -1,16 +1,36 @@
 import React from "react";
-import './fullRating.scss';
+import "./fullRating.scss";
 
 function FullRating(props) {
-  return (
-    <div className="home-rate">
-      <i className="fas fa-star"></i>
-      <i className="fas fa-star"></i>
-      <i className="fas fa-star"></i>
-      <i className="fas fa-star-half-alt"></i>
-      <i className="far fa-star"></i>
-    </div>
-  );
+  const {rate} = props;
+  const renderRateProduct = (rate) => {
+    let result = [];
+
+    let fullStar = Math.floor(rate);
+    let restStar = (rate * 10) % 10;
+
+    let total = 0;
+
+    for (let i = 0; i < fullStar; i++) {
+      result.push(<i key={total} className="fas fa-star"></i>);
+      total++;
+    }
+
+    if (3 < restStar && restStar <= 7) {
+      result.push(<i key={total} className="fas fa-star-half-alt"></i>);
+      total++;
+    } else if (restStar > 7) {
+      result.push(<i key={total} className="fas fa-star"></i>);
+      total++;
+    }
+    if (total < 5) {
+      for (let i = 0; i < 5 - total; i++) {
+        result.push(<i key={total + i} className="far fa-star"></i>);
+      }
+    }
+    return result;
+  };
+  return <div className="home-rate">{renderRateProduct(rate)}</div>;
 }
 
 FullRating.propTypes = {};

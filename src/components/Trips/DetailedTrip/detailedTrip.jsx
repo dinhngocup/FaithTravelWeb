@@ -65,7 +65,7 @@ function DetailedTrip(props) {
     },
   ];
   const renderDetailedTrip = (id, tripList) => {
-    console.log(id)
+    console.log(id);
     let trip;
     for (let tripItem of tripList)
       if (tripItem.tripId === parseInt(id)) {
@@ -81,7 +81,7 @@ function DetailedTrip(props) {
                 <div className="timeline">
                   <div className="homestay-name d-flex">
                     <div className="name">{trip.homestayName}</div>
-                    <FullRating rating={trip.rating} />
+                    <FullRating rate={trip.rating} />
                   </div>
                   <p>
                     <b>

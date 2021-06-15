@@ -15,7 +15,7 @@ function HomestayHeader(props) {
           <div className="container-fluid">
             <Row className="sub-title">
               <Col xs="12" sm="12" md="12" lg="1" xl="1" className="p-0 mr-5">
-                <FullRating />
+                <FullRating rate={4.5}/>
               </Col>
               <Col xs="12" sm="12" md="12" lg="6" xl="6" className="p-0">
                 <div>
