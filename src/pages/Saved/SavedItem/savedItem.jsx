@@ -1,37 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./savedItem.scss";
 import { Col, Row } from "reactstrap";
-import room4 from "../../../asset/image/room4.jpeg";
-import "./savedItem.scss";
-import SavedIcon from "../../../components/common/SavedIcon/savedIcon";
 import AverageRating from "../../../components/common/AverageRating/averageRating";
+import SavedIcon from "../../../components/common/SavedIcon/savedIcon";
+import "./savedItem.scss";
+
 function SavedItem(props) {
+  const { homestay, changeActiveStatus } = props;
+
   return (
     <div className="saved-item container-fluid mb-5">
       <Link to="/homestay">
         <Row>
           <Col xs="12" sm="12" md="12" lg="4" className="p-0">
-            <img src={room4} alt="" />
+            <img src={homestay.image} alt="" />
           </Col>
           <Col xs="12" sm="12" md="12" lg="1" className="p-0"></Col>
           <Col xs="12" sm="12" md="12" lg="7" className="p-0">
             <div className="saved-homestay-info d-flex">
               <div className="homestay-title d-flex">
                 <div className="title-content">
-                  <div className="location">
-                    Entire apartment in Da Lat city
-                  </div>
-                  <div className="name">Peace and love aparment</div>
-                  <div className="rule">
-                    5 guests · 1 bedroom · 3 beds · 1 bath
-                  </div>
+                  <div className="location">{homestay.city}</div>
+                  <div className="name">{homestay.homestayName}</div>
+                  <div className="rule">{homestay.rule}</div>
                 </div>
-                <SavedIcon />
+                <div onClick={() => changeActiveStatus(homestay.homestayId)}>
+                  <SavedIcon isActived={true} />
+                </div>
               </div>
               <div className="rating d-flex">
-                <AverageRating rating={4.5} />{" "}
-                <div className="review-homestay">(44 reviews)</div>
+                <AverageRating rating={homestay.rating} />
+                <div className="review-homestay">
+                  ({homestay.totalReviews} reviews)
+                </div>
               </div>
             </div>
           </Col>

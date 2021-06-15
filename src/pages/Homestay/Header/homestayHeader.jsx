@@ -28,7 +28,7 @@ function HomestayHeader(props) {
           </div>
         </Col>
         <Col xs="12" sm="12" md="12" lg="4" className="p-0 heart-icon d-flex">
-          <SavedIcon />
+          <SavedIcon isActived={false} />
         </Col>
       </Row>
     </div>
