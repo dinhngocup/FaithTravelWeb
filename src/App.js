@@ -6,13 +6,16 @@ import Header from "./pages/Header/main";
 import Trips from "./pages/Trips/main";
 import Homestay from "./pages/Homestay/main";
 import Saved from "./pages/Saved/main";
+import SavedProvider from './context/savedContext';
 
 function App() {
   return (
+
     <div className="wrapper">
       <div className="main-content">
         <Router>
           <Header />
+          <SavedProvider>
           <div className="body-content">
             <Switch>
               <Route path="/trips">
@@ -26,6 +29,7 @@ function App() {
               </Route>
             </Switch>
           </div>
+          </SavedProvider>
         </Router>
       </div>
     </div>

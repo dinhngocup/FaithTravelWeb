@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
+import { SavedContext } from "../../../context/savedContext";
 import "./savedIcon.scss";
 
 function SavedIcon(props) {
-  const { isActived } = props;
+  const { savedHomestay, removeHomestay } = useContext(SavedContext);
+  const { isActived, homestayId } = props;
+
   const changeSavedStatus = (e) => {
     e.preventDefault();
     let icon = e.target;
-    if (icon.classList.contains("active")) icon.classList.remove("active");
-    else icon.classList += " active";
+
+    if (isActived) {
+      removeHomestay(homestayId);
+      icon.classList.remove("active");
+    } else {
+      savedHomestay(homestayId);
+      icon.classList += " active";
+    }
   };
+
   return (
     <>
       <i

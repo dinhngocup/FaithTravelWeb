@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Faith Travel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Feel at home, no matter where you are.
 
-## Available Scripts
 
-In the project directory, you can run:
+Guests can explore the perfect place with the ideal price to stay for every getaway. Hosts can share their world, receive hosting tips and earn money while creating memorable moments for guests.
 
-### `yarn start`
+### Guests can use the Faith Travel app to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Your next solo journey or family vacation become exciting when booking vacation rentals through Faith Travel.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Create your homestay wishlist for enjoyable holidays
 
-### `yarn test`
+- Track your itinerary
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Message your host for directions, assistance, and helpful tips
 
-### `yarn build`
+### Hosts can take advantage of the Faith Travel app to:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Share your extra home space through the vacation rental platform.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Share what’s special about your city with a host guidebook
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Message guests and manage their reservations
 
-### `yarn eject`
+- Make friends and create memoriable moments with guests
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Special screenshots
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  <p align="center"><i>Wishlist</i></p>
+    <p align="center">
+    <kbd>
+    <img src='./src/readmeImage/saved.png' width="650" title="Wish list">
+    </kbd>
+    </p>
+  <br/>
+  <p align="center"><i>Upcomming Trips</i></p>
+    <p align="center">
+    <kbd>
+    <img src='./src/readmeImage/trips.png' width="650" title="Upcomming trips">
+    </kbd>
+    </p>
+  <br/>
+  <p align="center"><i>Detailed Upcomming Trip</i></p>
+    <p align="center">
+    <kbd>
+    <img src='./src/readmeImage/detailedTrips.png' width="650" title="Upcomming trips">
+    </kbd>
+    </p>
+  <br/>
+  <p align="center"><i>Top Valuable Reviews</i></p>
+    <p align="center">
+    <kbd>
+    <img src='./src/readmeImage/topReviews.png' width="650" title="Top reviews">
+    </kbd>
+    </p>
+  <br/>
+  <p align="center"><i>Other feedbacks</i></p>
+    <p align="center">
+    <kbd>
+    <img src='./src/readmeImage/detailedReviews.png' width="650" title="Other feedbacks">
+    </kbd>
+    </p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Framework
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [React JS](https://reactjs.org/)
+- Libs:
+  - [React Router](https://reactrouter.com/web/guides/quick-start)
+  - [Boostraps 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
-## Learn More
+### Tools:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Visual Studio Code
+- Figma: design UI & UX.
+- GitHub: store source code of the whole project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Contributors:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Pham Ngoc Thinh - ID: 18520368 - email: 18520368@gm.uit.edu.vn
+- Dinh Ngoc Uyen Phuong - ID: 18520335 - email: 18520335@gm.uit.edu.vn

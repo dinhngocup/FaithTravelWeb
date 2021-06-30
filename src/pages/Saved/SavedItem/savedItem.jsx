@@ -6,7 +6,7 @@ import SavedIcon from "../../../components/common/SavedIcon/savedIcon";
 import "./savedItem.scss";
 
 function SavedItem(props) {
-  const { homestay, changeActiveStatus } = props;
+  const { homestay } = props;
 
   return (
     <div className="saved-item container-fluid mb-5">
@@ -24,8 +24,11 @@ function SavedItem(props) {
                   <div className="name">{homestay.homestayName}</div>
                   <div className="rule">{homestay.rule}</div>
                 </div>
-                <div onClick={() => changeActiveStatus(homestay.homestayId)}>
-                  <SavedIcon isActived={true} />
+                <div>
+                  <SavedIcon
+                    isActived={true}
+                    homestayId={homestay.homestayId}
+                  />
                 </div>
               </div>
               <div className="rating d-flex">

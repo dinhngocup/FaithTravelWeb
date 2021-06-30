@@ -82,7 +82,7 @@ function TopReviews(props) {
   };
   return (
     <div className="review-area">
-      <h4 className="review-title">Review</h4>
+      <h4 className="review-title">Top Reviews</h4>
       <div className="review-list container-fluid">
         <Row className="review-row">
           {renderListReview(reviews)}
